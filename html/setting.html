@@ -4,36 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-    rel="stylesheet" href="../css/master.css" media="screen" charset="utf-8">
+    <title>Sword Coast - Drexel D&D</title>
+    <link rel="normlize" href="../css/normalize.css" media="screen">
+    <link rel="stylesheet" href="../css/master.css" media="screen">
 </head>
 <body>
+<div class=wrapper>
     <header>
-        <nav class=nav>
+        <nav>
             <ul>
-                <li class=button>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
                     <a href="setting.html">Explore</a>
                 </li>
                 <li>
-                    <a float=clear href="index.html"><img src="../graphics/DGAlogo.png" alt="DGA logo" class=logo></a>
-                </li>
-                <li class=button>
                     <a href="signup.html">Sign Up</a>
                 </li>
             </ul>
         </nav>
-        <img class = backgroundImage src="../images/BarbarianFightingDragon.jpg" alt="Barbarian fighting a dragon">
-        <h1 class = articleTitle>Welcome, adventurers!</h1>
     </header>
-
-    <p class=bodyParagraph>This is the website for the <a href = "https://drexel.campuslabs.com/engage/organization/dga">Drexel Gaming Association's</a> Dungeons and Dragons play.
-        To get started, check out the <a href="html/signup.html">sign up</a> page.
-        You can also <a href="html/setting.html">start exploring</a> our setting!
-    </p>
-    <hr>
+    <img class=landscape src="../images/SwordCoast.jpg" alt="An image of the sword coast.">
+    <div class=article>
+        <div class=title>
+            <h1>THE SWORD COAST</h1>
+        </div>
+        <div class=contents>
+            <h2>
+                A LAND OF ADVENTURE
+            </h2>
+            <br>
+            <p>
+                Welcome to the Sword Coast. To the West, the Sea of Swords sparkles in the evening sun.
+                To the East, the dusty and dangerous Starmetal Hills guard the way to perilous deserts.
+                To the North stands the proud city of Neverwinter, a hub of trade and power in the land.
+                To the South, the icy Sword Mountains swallow up ancient ruins and monster-filled caves.
+                In between is the Great Valley. This idyllic grassy plairie has been a frontier, a home, and a battlefield for generations.
+                In the wake of the Skeleton War, one question is on everyone's minds: what's next for the Coast?
+            </p>
+            <br>
+            <h2>
+                LOCATIONS
+            </h2>
+            <br>
+            <p>
+                Click on a location to learn more. More points of interest are discovered all the time.
+            </p>  
+            <br>
+            <div class=entries>
+                <a href="phandalin.html"><div class=card>
+                    <img class=preview src="../images/Phandalin.jpg">
+                    <h3>Phandalin</h3>
+                </div>  
+                </a>
+                <a href="neverwinter.html"><div class=card>
+                    <img class=preview src="../images/Neverwinter.jpg">
+                    <h3>Neverwinter</h3>
+                </div>  
+                </a>
+                <a href="leilon.html"><div class=card>
+                    <img class=preview src="../images/Leilon.jpg">
+                    <h3>Leilon</h3>
+                </div>  
+                </a>
+                <a href="neverwinter_wood.html"><div class=card>
+                    <img class=preview src="../images/NeverwinterWood.jpg">
+                    <h3>Neverwinter Wood</h3>
+                </div>  
+                </a>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>The DGA logo belongs to the Drexel Gaming Association. All other art belongs to Wizards of the Coast.</p>
+        <p>
+            &copy Alice Poole 2021
+        </p>
     </footer>
+</div>
 </body>
 </html>

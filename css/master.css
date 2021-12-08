@@ -1,82 +1,131 @@
-body{
-    background-color: ivory;
-    color: black;
+* { 
+    box-sizing: border-box; 
     margin: 0;
-    padding: 0;
-    border: 0;
 }
-
-.backgroundImage{
+.article {
+    background-color: #fffdf1;
+    box-shadow: 0 1rem 3rem #4e3c47;
+    margin: auto;
+    margin-bottom: 0;
+    padding: 1rem 1rem 6rem;
+    position: relative;
+    top: -15vw;
+    width: 80%;
+}
+.article a:link, 
+.article a:visited {
+    color: #79b9d9;
+    text-decoration: none;
+}
+.card {
+    background-color: #fffdf1;
+    border-bottom: solid #4e3c47 1px;
+    border-left: solid #4e3c47 1px;
+    border-right: solid #4e3c47 1px;
+    box-shadow: -0.1rem 1rem 1rem #4e3c47;
+    display: block;
+    margin: 0 auto 2rem;
+    padding: 0 0 1rem;
     width: 100%;
+}
+.card:hover {
+    background-color: #fdf7d1;
+    box-shadow: -0.5rem 1.5rem 2rem #4e3c47;
+}
+.card .preview {
+    display: block;
+    height: 12rem;
+    margin: 0 0 1rem;
+    max-height: 12rem;
+    object-fit: cover;
+    padding: 0;
+    width: 100%;
+}
+.contents {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    margin: 0 auto 0 auto;
+    text-indent: 1.125rem;
+    padding: 0;
+    width: 80%;
+}
+.embed {
+    display: block;
     height: auto;
-    overflow: auto;
-    max-height: 56.25%;
+    margin: auto;
+    width: 100%;
 }
-
-.logo{
-    box-sizing: border-box;
-    width: auto;
-    height: 8rem;
-    border: solid blue 1px;
-}
-
-.nav ul{
-    list-style: none;
+footer {
+    color: #fffdf1;
+    font-size: 1.25rem;    
+    margin: 0;
+    padding: 0 0 4rem;
+    text-align: center;
+  }
+h2 {
     text-align: center;
 }
-
-.nav ul li{
-    display: inline-block;
-    box-sizing: border-box;
-    min-width: 20%;
-    font-size: 2rem;
-}
-
-.button{
+h3 {
     padding: 1rem;
+    text-align: center;
+}
+header {
+    background-color: #aca491;
+    background-image: url(../images/Bricks.jpg);
+    height: auto;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+  }
+.landscape {
+    height: 50vw;
+    object-fit: cover;
+    width: 100%;
+}
+nav {
+    text-align: center;
+    z-index: 100;
+}
+nav ul {
+    list-style: none;
     margin: 0;
-    border: groove #6a806b 5px;
-    position: relative;
-    top: -3rem;
-    background-color: #d3d7c0;
+    padding: 0;
 }
-
-.articleTitle{
-    border: solid brown 1px;
+nav ul li {
+    display: inline-block;
+    padding: 2vh 0;
 }
-nav{
-    background-color: #d3d7c0;
-    overflow: hidden;
+nav ul li a {
+    background-image: linear-gradient(to right, #aca491, #928572);
+    border: groove #575040 8px;
+    color: #302625;
+    font-size: 4vw;
+    margin: 0 1.5vw;
+    padding: 1vh 3vw;
+    text-decoration: none;
 }
-.headerLeft{
-    box-sizing: border-box;
-    border: solid purple 1px;
+/*Max font size for scaling nav bar options*/
+@media screen and (min-width: 1400px){
+    nav ul li a{
+       font-size: 40px;
+    }
+  }
+nav ul li a:hover {
+    background-image: linear-gradient(to right,#575040, #575040);
+    border-style: inset;
+    color: #fff;
 }
-.headerRight{
-    box-sizing: border-box;
-    border: solid purple 1px;
+.title {
+    border-bottom: solid #ad3a25 5px;
+    margin: 2.5rem;
+    padding: 0 0 .5rem;
+    text-align: center;
 }
-nav ul li.a{
-    color:yellow;
-    font-size: 2rem;
-}
-
-.bodyParagraph{
-    border: solid orange 1px;
-}
-
-h1{
-    font-size: 4rem;
-}
-h2{
-    font-size: 2rem;
-}
-h3{
-    font-size: 1.6rem;
-}
-p{
-    font-size: 1rem;
-}
-footer{
-    color:darkgray;
+.wrapper {
+    background-image: url(../images/Bricks.jpg);
+    background-repeat: repeat;
+    margin: 0;
+    width: 100%;
 }
