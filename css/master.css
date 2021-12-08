@@ -2,6 +2,34 @@
     box-sizing: border-box; 
     margin: 0;
 }
+@font-face {
+    font-family: 'Dalelands';
+    src: url('../fonts/dalelands.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'Draconis';
+    src: url('../fonts/draconis.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'NorseBold';
+    src: url('../fonts/norse-bold.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/sourcesanspro.woff2') format('woff2')
+}
+@font-face {
+    font-family: 'Vecna';
+    src: url('../fonts/vecna.woff2') format('woff2')
+}
 .article {
     background-color: #fffdf1;
     box-shadow: 0 1rem 3rem #4e3c47;
@@ -27,10 +55,12 @@
     margin: 0 auto 2rem;
     padding: 0 0 1rem;
     width: 100%;
+    color: #000;
 }
 .card:hover {
     background-color: #fdf7d1;
     box-shadow: -0.5rem 1.5rem 2rem #4e3c47;
+    color: #ad3a25;
 }
 .card .preview {
     display: block;
@@ -62,10 +92,19 @@ footer {
     padding: 0 0 4rem;
     text-align: center;
   }
+h1{
+    font-family: 'Dalelands','Times New Roman', serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
 h2 {
+    font-family: 'Vecna', Georgia, serif;
+    font-size: 2.5rem;
     text-align: center;
 }
 h3 {
+    font-family: 'Draconis', Garamond, serif;
+    font-size: 2.5rem;
     padding: 1rem;
     text-align: center;
 }
@@ -101,6 +140,7 @@ nav ul li a {
     background-image: linear-gradient(to right, #aca491, #928572);
     border: groove #575040 8px;
     color: #302625;
+    font-family:'NorseBold';
     font-size: 4vw;
     margin: 0 1.5vw;
     padding: 1vh 3vw;
@@ -117,11 +157,13 @@ nav ul li a:hover {
     border-style: inset;
     color: #fff;
 }
+p, ol{
+    font-family: 'SourceSansPro', 'Roboto', sans-serif;
+}
 .title {
     border-bottom: solid #ad3a25 5px;
     margin: 2.5rem;
     padding: 0 0 .5rem;
-    text-align: center;
 }
 .wrapper {
     background-image: url(../images/Bricks.jpg);
