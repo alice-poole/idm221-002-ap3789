@@ -1,7 +1,9 @@
+/*formats everything as border box for ease*/
 * { 
     box-sizing: border-box; 
     margin: 0;
 }
+/*fonts*/
 @font-face {
     font-family: 'Dalelands';
     src: url('../fonts/dalelands.woff2') format('woff2')
@@ -26,6 +28,7 @@
     font-family: 'Vecna';
     src: url('../fonts/vecna.woff2') format('woff2')
 }
+/*white article body*/
 .article {
     background-color: #fffdf1;
     box-shadow: 0 1rem 3rem #4e3c47;
@@ -41,6 +44,7 @@
     color: #79b9d9;
     text-decoration: none;
 }
+/*setting preview cards*/
 .card {
     background-color: #fffdf1;
     border-bottom: solid #4e3c47 1px;
@@ -66,6 +70,7 @@
     padding: 0;
     width: 100%;
 }
+/*article contents*/
 .contents {
     font-size: 1.125rem;
     line-height: 2rem;
@@ -77,12 +82,14 @@
 .contents .ol {
     text-indent: 1.125rem;
 }
+/*for images in articles*/
 .embed {
     display: block;
     height: auto;
     margin: auto;
     width: 100%;
 }
+/*footer*/
 footer {
     color: #fffdf1;
     font-size: 1.25rem;    
@@ -90,6 +97,7 @@ footer {
     padding: 0 0 4rem;
     text-align: center;
   }
+/*header text styles*/
 h1{
     font-family: 'Dalelands','Times New Roman', serif;
     font-size: 2.125rem;
@@ -106,6 +114,7 @@ h3 {
     padding: 1rem;
     text-align: center;
 }
+/*nav bar brick background*/
 header {
     background-color: #aca491;
     background-image: url(../images/Bricks.jpg);
@@ -116,11 +125,13 @@ header {
     width: 100%;
     z-index: 90;
   }
+/*for header background images*/
 .landscape {
     height: 50vw;
     object-fit: cover;
     width: 100%;
 }
+/*nav bar scales with screen size to stay on one line*/
 nav {
     text-align: center;
     z-index: 100;
@@ -144,7 +155,7 @@ nav ul li a {
     padding: 1vh 3vw;
     text-decoration: none;
 }
-/*Max font size for scaling nav bar options*/
+/*max font size for scaling nav bar options*/
 @media screen and (min-width: 1400px){
     nav ul li a{
        font-size: 40px;
@@ -155,14 +166,17 @@ nav ul li a:hover {
     border-style: inset;
     color: #fff;
 }
+/*article body text*/
 p, ol{
     font-family: 'SourceSansPro', 'Roboto', sans-serif;
 }
+/*article title section*/
 .title {
     border-bottom: solid #ad3a25 5px;
     margin: 2rem 0;
     padding: 0 0 .5rem;
 }
+/*page brick background*/
 .wrapper {
     background-image: url(../images/Bricks.jpg);
     background-repeat: repeat;
