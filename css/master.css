@@ -53,7 +53,7 @@
     box-shadow: -0.1rem 1rem 1rem #4e3c47;
     display: block;
     margin: 0 auto 2rem;
-    padding: 0 0 1rem;
+    padding: 0 0 0.5rem;
     width: 100%;
     color: #000;
 }
@@ -64,9 +64,8 @@
 }
 .card .preview {
     display: block;
-    height: 12rem;
-    margin: 0 0 1rem;
-    max-height: 12rem;
+    height: 8rem;
+    margin: 0 0 0.5rem;
     object-fit: cover;
     padding: 0;
     width: 100%;
@@ -75,9 +74,12 @@
     font-size: 1.125rem;
     line-height: 2rem;
     margin: 0 auto 0 auto;
-    text-indent: 1.125rem;
     padding: 0;
     width: 90%;
+}
+.contents .p,
+.contents .ol {
+    text-indent: 1.125rem;
 }
 .embed {
     display: block;
