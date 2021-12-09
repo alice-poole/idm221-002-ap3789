@@ -11,10 +11,6 @@
     src: url('../fonts/draconis.woff2') format('woff2')
 }
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/lato.woff2') format('woff2')
-}
-@font-face {
     font-family: 'NorseBold';
     src: url('../fonts/norse-bold.woff2') format('woff2')
 }
